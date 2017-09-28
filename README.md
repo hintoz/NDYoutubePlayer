@@ -17,7 +17,7 @@ NDYouTubePlayer is available on CocoaPods.
 CocoaPods:
 
 ```ruby
-pod "NDYouTubePlayer"
+pod "NDYoutubePlayer"
 ```
 ## Note
 Thanks for [***0xced***](https://github.com/0xced), i'm written this project using Swift base on XCDYoutubeKit of him.

@@ -20,4 +20,4 @@ CocoaPods:
 pod "NDYouTubePlayer"
 ```
 ## Note
-Thanks for [***0xced***](https://github.com/0xced), i'm written this project using SWift base on XCDYoutubeKit of him.
+Thanks for [***0xced***](https://github.com/0xced), i'm written this project using Swift base on XCDYoutubeKit of him.

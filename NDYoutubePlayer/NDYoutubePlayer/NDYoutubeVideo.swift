@@ -9,7 +9,7 @@
 import UIKit
 
 
-enum NDYouTubeVideoQuality: String {
+public enum NDYouTubeVideoQuality: String {
     /**
      *  Video: 240p MPEG-4 Visual | 0.175 Mbit/s
      *  Audio: AAC | 36 kbit/s
@@ -29,7 +29,7 @@ enum NDYouTubeVideoQuality: String {
     case NDYouTubeVideoQualityHD720     = "22"
 }
 
-class NDYoutubeVideo: NSObject {
+open class NDYoutubeVideo: NSObject {
     
     /**
      *  --------------------------------

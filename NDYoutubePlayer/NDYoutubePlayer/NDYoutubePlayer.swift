@@ -10,8 +10,8 @@ import Foundation
 import AVKit
 
 open class NDYoutubePlayer: AVPlayerLayer {
-    var youtubePlayer: AVPlayer!
-    override init() {
+    open var youtubePlayer: AVPlayer!
+    override public init() {
         super.init()
     }
     

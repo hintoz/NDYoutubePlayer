@@ -26,8 +26,8 @@ class ViewController: UIViewController {
     
     func setUpYotubeVideoPlayer() {
         youtubeVideoPlayer = NDYoutubePlayer()
+        youtubeVideoPlayer.frame = CGRect(x: 0, y: 0, width: self.videoLayerView.bounds.width, height: self.videoLayerView.bounds.height)
         self.videoLayerView.layer.addSublayer(youtubeVideoPlayer)
-        youtubeVideoPlayer.frame = self.videoLayerView.frame
     }
     func playVideo(indentifier: String) {
         youtubeVideoPlayer.playVideo(indentifier: indentifier)

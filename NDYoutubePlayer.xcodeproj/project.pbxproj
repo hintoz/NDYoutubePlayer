@@ -17,7 +17,7 @@
 		CEE6AAE11F7D107B009247C2 /* NDYoutubePlayerScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6AADE1F7D0F7E009247C2 /* NDYoutubePlayerScript.swift */; };
 		CEE6AAE21F7D107D009247C2 /* NDYoutubeVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6AADA1F7D0F7E009247C2 /* NDYoutubeVideo.swift */; };
 		CEE6AAE31F7D107F009247C2 /* NDYoutubeVideoWebPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6AADC1F7D0F7E009247C2 /* NDYoutubeVideoWebPage.swift */; };
-		CEE6AAE41F7D1081009247C2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6AADB1F7D0F7E009247C2 /* Utilities.swift */; };
+		CEE6AAE41F7D1081009247C2 /* NDUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6AADB1F7D0F7E009247C2 /* NDUtilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,7 @@
 		CEE6AAD21F7D0F5A009247C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEE6AAD91F7D0F7D009247C2 /* NDYoutubeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDYoutubeClient.swift; sourceTree = "<group>"; };
 		CEE6AADA1F7D0F7E009247C2 /* NDYoutubeVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDYoutubeVideo.swift; sourceTree = "<group>"; };
-		CEE6AADB1F7D0F7E009247C2 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		CEE6AADB1F7D0F7E009247C2 /* NDUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDUtilities.swift; sourceTree = "<group>"; };
 		CEE6AADC1F7D0F7E009247C2 /* NDYoutubeVideoWebPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDYoutubeVideoWebPage.swift; sourceTree = "<group>"; };
 		CEE6AADD1F7D0F7E009247C2 /* NDYoutubePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDYoutubePlayer.swift; sourceTree = "<group>"; };
 		CEE6AADE1F7D0F7E009247C2 /* NDYoutubePlayerScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDYoutubePlayerScript.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 				CEE6AADE1F7D0F7E009247C2 /* NDYoutubePlayerScript.swift */,
 				CEE6AADA1F7D0F7E009247C2 /* NDYoutubeVideo.swift */,
 				CEE6AADC1F7D0F7E009247C2 /* NDYoutubeVideoWebPage.swift */,
-				CEE6AADB1F7D0F7E009247C2 /* Utilities.swift */,
+				CEE6AADB1F7D0F7E009247C2 /* NDUtilities.swift */,
 			);
 			path = NDYoutubePlayer;
 			sourceTree = "<group>";
@@ -168,7 +168,7 @@
 				CEE6AAC71F7D0F5A009247C2 /* AppDelegate.swift in Sources */,
 				CEE6AAE31F7D107F009247C2 /* NDYoutubeVideoWebPage.swift in Sources */,
 				CEE6AAE11F7D107B009247C2 /* NDYoutubePlayerScript.swift in Sources */,
-				CEE6AAE41F7D1081009247C2 /* Utilities.swift in Sources */,
+				CEE6AAE41F7D1081009247C2 /* NDUtilities.swift in Sources */,
 				CEE6AAE21F7D107D009247C2 /* NDYoutubeVideo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

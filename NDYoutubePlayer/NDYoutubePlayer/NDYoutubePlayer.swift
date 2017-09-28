@@ -15,7 +15,7 @@ open class NDYoutubePlayer: AVPlayerLayer {
         super.init()
     }
     
-    func playVideo(indentifier: String, quality: NDYouTubeVideoQuality? = nil, isAutoPlay: Bool = true) {
+    open func playVideo(indentifier: String, quality: NDYouTubeVideoQuality? = nil, isAutoPlay: Bool = true) {
         if youtubePlayer != nil {
             youtubePlayer.pause()
             youtubePlayer.replaceCurrentItem(with: nil)
@@ -43,7 +43,7 @@ open class NDYoutubePlayer: AVPlayerLayer {
         }
     }    
     
-    func stop() {
+    open func stop() {
         if youtubePlayer != nil {
             youtubePlayer.pause()
             youtubePlayer.replaceCurrentItem(with: nil)
@@ -51,19 +51,19 @@ open class NDYoutubePlayer: AVPlayerLayer {
         }
     }
     
-    func play() {
+    open func play() {
         if youtubePlayer != nil {
             youtubePlayer.play()
         }
     }
     
-    func pause() {
+    open func pause() {
         if youtubePlayer != nil {
             youtubePlayer.pause()
         }
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

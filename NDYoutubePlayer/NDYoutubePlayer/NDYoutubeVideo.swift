@@ -40,28 +40,28 @@ open class NDYoutubeVideo: NSObject {
     /**
      *  The 11 characters YouTube video identifier.
      */
-    var identifier: String?
+    open var identifier: String?
     /**
      *  The title of the video.
      */
-    var title: String?
+    open var title: String?
     /**
      *  The duration of the video in seconds.
      */
-    var duration: TimeInterval?
+    open var duration: TimeInterval?
     
     /**
      *  A thumbnail URL for an image of small size, i.e. 120×90. May be nil.
      */
-    var smallThumbnailURL: URL?
+    open var smallThumbnailURL: URL?
     /**
      *  A thumbnail URL for an image of medium size, i.e. 320×180, 480×360 or 640×480. May be nil.
      */
-    var mediumThumbnailURL: URL?
+    open var mediumThumbnailURL: URL?
     /**
      *  A thumbnail URL for an image of large size, i.e. 1'280×720 or 1'980×1'080. May be nil.
      */
-    var largeThumbnailURL: URL?
+    open var largeThumbnailURL: URL?
     
     /**
      *  A dictionary of video stream URLs.
@@ -79,7 +79,7 @@ open class NDYoutubeVideo: NSObject {
 //    @property (nonatomic, readonly) NSDictionary *streamURLs;
 //    #endif
     
-    var streamURLs: [String: Any]?
+    open var streamURLs: [String: Any]?
     
     /**
      *  The expiration date of the video.

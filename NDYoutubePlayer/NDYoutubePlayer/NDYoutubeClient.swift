@@ -174,7 +174,7 @@ extension NDYoutubeClient {
             }
         } else {
             switch err {
-            case .CouldNotGetInfo(let _):
+            case .CouldNotGetInfo(_):
                 self.startGetVideo(withIndentifier: self.indentifier)
             case .NonError:
                 return

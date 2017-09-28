@@ -19,9 +19,9 @@ class NDYoutubePlayerScript: NSObject {
         
         self.context = JSContext()
         self.context!.exceptionHandler = { (context, value) in
-            debugPrint("JavaScript exception: \(value)")
+            debugPrint("JavaScript exception: \(String(describing: value?.context.description))")
         }
-        var environment: NSDictionary = [
+        let environment: NSDictionary = [
             "document" : [
                 "documentElement" : [:]
             ],
@@ -85,7 +85,7 @@ class NDYoutubePlayerScript: NSObject {
         if self.signatureFunction == nil || scrambledSignature == nil {
             return nil
         }
-        let unscrambledSignature = self.signatureFunction!.call(withArguments: [scrambledSignature])
+        let unscrambledSignature = self.signatureFunction!.call(withArguments: [scrambledSignature ?? ""])
         return (unscrambledSignature?.isString)! ? unscrambledSignature!.toString() : nil
     }
 }

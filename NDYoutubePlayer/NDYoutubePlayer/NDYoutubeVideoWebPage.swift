@@ -64,8 +64,8 @@ class NDYoutubeVideoWebPage {
             if let playerConfiguration = self.getPlayerConfiguration() {
                 if let args = playerConfiguration["args"] as? [String: AnyObject] {
                     let info = args.filter({ (arg) -> Bool in
-                        let (key, value) = arg
-                        return value is NSNumber || key is String
+                        let (_, value) = arg
+                        return value is NSNumber
                     })
                     videoInfo = info
                     return videoInfo

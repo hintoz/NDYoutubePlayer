@@ -100,7 +100,7 @@ class NDYoutubeVideo: NSObject {
         let httpLiveStream = info["hlsvp"] as? String
         let adaptiveFormats = info["adaptive_fmts"] as? String
         
-        var userInfo = response?.url != nil ? [NSURLErrorKey: response?.url!.absoluteString ] : [:]
+//        var userInfo = response?.url != nil ? [NSURLErrorKey: response?.url!.absoluteString ] : [:]
         
         
         let streamMapString = streamMap ?? ""
@@ -198,7 +198,7 @@ class NDYoutubeVideo: NSObject {
             let regularExpression = try NSRegularExpression(pattern: pattern, options: [])
             
             
-            var percentEncodedQuery: NSMutableString = NSMutableString(string: components!.percentEncodedQuery!)
+            let percentEncodedQuery: NSMutableString = NSMutableString(string: components!.percentEncodedQuery!)
             
             let numberOfMatches = regularExpression.replaceMatches(in: percentEncodedQuery , options: [], range: NSRange(location: 0, length: percentEncodedQuery.length), withTemplate: template)
             var percentString = percentEncodedQuery as String

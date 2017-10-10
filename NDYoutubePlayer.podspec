@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name             = "NDYoutubePlayer"
-  s.version          = "0.1.1"
+  s.version          = "0.1.3"
   s.summary          = "NDYoutubePlayer is subclass of AVPlayerLayer. NDYoutubePlayer help you play video from Youtube in your application."
   
   s.homepage         = "https://github.com/dhnghia22/NDYoutubePlayer"

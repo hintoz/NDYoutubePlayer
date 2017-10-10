@@ -9,6 +9,7 @@
 ## Requirements
 
 - Runs on iOS 9.0 and later
+- Requires Swift 4.0  and ARC.
 
 ## Installation
 

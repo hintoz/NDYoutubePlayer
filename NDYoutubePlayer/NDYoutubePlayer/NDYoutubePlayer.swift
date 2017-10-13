@@ -15,6 +15,11 @@ open class NDYoutubePlayer: AVPlayerLayer {
         super.init()
     }
     
+    public override init(layer: Any) {
+        super.init(layer: layer)
+    }
+    
+    
     open func playVideo(indentifier: String, quality: NDYouTubeVideoQuality? = nil, isAutoPlay: Bool = true) {
         if youtubePlayer != nil {
             youtubePlayer.pause()

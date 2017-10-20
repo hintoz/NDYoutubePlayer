@@ -34,16 +34,13 @@ enum NDYoutubeRequestError: Error {
 
 let yotubeURL = "https://www.youtube.com"
 
-class NDYoutubeClient {
-    static let shared: NDYoutubeClient = NDYoutubeClient()
+open class NDYoutubeClient {
+    open static let shared: NDYoutubeClient = NDYoutubeClient()
     fileprivate var languageIdentifier: String?
     fileprivate var eventLabels: [String] = []
     fileprivate var requestType: NDYouTubeRequestType!
     fileprivate var indentifier: String!
     
-//    @property (atomic, strong) XCDYouTubeVideoWebpage *webpage;
-//    @property (atomic, strong) XCDYouTubeVideoWebpage *embedWebpage;
-//    @property (atomic, strong) XCDYouTubePlayerScript *playerScript;
     fileprivate var playerScript: NDYoutubePlayerScript?
     fileprivate var embedWebpage: NDYoutubeVideoWebPage?
     fileprivate var webpage: NDYoutubeVideoWebPage?
@@ -58,14 +55,14 @@ class NDYoutubeClient {
     fileprivate var dataTask = URLSessionDataTask()
     fileprivate let session = URLSession(configuration: .ephemeral)
     
-    func getVideoWithIdentifier(videoIdentifier: String, completionHandler: @escaping ((_ video: NDYoutubeVideo?, _ error: Error) -> Void)) {
+    open func getVideoWithIdentifier(videoIdentifier: String, completionHandler: @escaping ((_ video: NDYoutubeVideo?, _ error: Error) -> Void)) {
         self.operationQueue.cancelAllOperations()
         self.operationQueue.addOperation {
             self.start(indentifier: videoIdentifier, completionHandler: completionHandler)
         }
     }
     
-    func start(indentifier: String, completionHandler: @escaping ((_ video: NDYoutubeVideo?, _ error: Error) -> Void) ) {
+    fileprivate func start(indentifier: String, completionHandler: @escaping ((_ video: NDYoutubeVideo?, _ error: Error) -> Void) ) {
         self.indentifier = indentifier
         eventLabels = ["embedded","detailpage"]
         self.completionHandler = completionHandler

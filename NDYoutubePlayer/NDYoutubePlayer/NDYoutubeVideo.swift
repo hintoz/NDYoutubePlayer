@@ -95,7 +95,8 @@ open class NDYoutubeVideo: NSObject {
     
     init?(withIndentifier identifier: String, info: [String:AnyObject], response: URLResponse?, playerScript: NDYoutubePlayerScript?, err: inout NDYoutubeRequestError) {
         super.init()
-
+        
+        
         let streamMap = info["url_encoded_fmt_stream_map"] as? String
         let httpLiveStream = info["hlsvp"] as? String
         let adaptiveFormats = info["adaptive_fmts"] as? String
@@ -157,6 +158,7 @@ open class NDYoutubeVideo: NSObject {
                 err = NDYoutubeRequestError.CheckNextRequest
                 return nil
             }
+            self.identifier = identifier
             self.streamURLs = streamURLs
         } else {
             if let reason = info["reason"] as? String {

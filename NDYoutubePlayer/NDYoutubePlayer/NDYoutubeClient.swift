@@ -55,6 +55,10 @@ open class NDYoutubeClient {
     fileprivate var dataTask = URLSessionDataTask()
     fileprivate let session = URLSession(configuration: .ephemeral)
     
+    public init() {
+        
+    }
+    
     open func getVideoWithIdentifier(videoIdentifier: String, completionHandler: @escaping ((_ video: NDYoutubeVideo?, _ error: Error) -> Void)) {
         self.operationQueue.cancelAllOperations()
         self.operationQueue.addOperation {

@@ -108,9 +108,11 @@ open class NDYoutubeVideo: NSObject {
         let httpLiveStreamString = httpLiveStream ?? ""
         
         
-        if streamMapString.characters.count > 0 || httpLiveStreamString.characters.count > 0 {
+        if streamMapString.count > 0 || httpLiveStreamString.count > 0 {
             var streamQueries = streamMapString.components(separatedBy: ",")
-            streamQueries.append(contentsOf: adaptiveFormats!.components(separatedBy: ","))
+            if let adaptiveFormats = adaptiveFormats {
+                streamQueries.append(contentsOf: adaptiveFormats.components(separatedBy: ","))
+            }
             self.title = info["title"] as? String
             self.duration = info["length_seconds"] as? TimeInterval
             
